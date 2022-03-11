@@ -1,0 +1,23 @@
+
+
+<h1>Articles</h1>
+
+<ul style ="background-color: rgb(240, 220, 233); list-style:none ">
+  <% @user.each do |x|  %>
+     
+    <div style ="background-color: gray ; width : 200px ; margin-top: 20px ; border-radius: 5px;" >
+        <li style = "color: blue ; margin : 10px" >
+        <%= x.name%>
+        </li>
+        <li >
+        <%= x.phone_num%>
+        </li>
+        <li>
+        <%= x.address%>
+        </li>
+        <li>
+        <%= x.state%>
+        </li>
+    </div>
+  <% end %>
+</ul>
